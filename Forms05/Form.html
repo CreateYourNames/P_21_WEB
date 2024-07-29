@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Регистрация</title>
+    <style>
+        /*file:///C:/Users/Илюша/source/repos/P_21_WEB/Forms05/Form.html?fullName=alex&passwd=qwerty&phone=rfrjuj&email=alex%40T&birthDate=2024-07-28&photo=von-neumann.png&intoduceYourself=просто + классный + пацан&color=%2360b0fb&vacancy=2024-W32&place=ыска&happyness=100#file.php*/
+    </style>
+</head>
+<body>
+    <form action="#file.php" method="post">
+        <p><input type="text" size="25" maxlength="25" placeholder="Введите ваше имя" name="fullName"></p>
+        <p><input type="password" placeholder="Введите пароль" name="passwd"></p>
+        <p><input type="tel" placeholder="Ваш номер телефона" name="phone"></p>
+        <p><input type="email" placeholder="E-mail"name="email"></p>
+        <p>Дата рождения:<br><input type="date" name="birthDate"></p>
+        <p>Добавьте фоточку:<br><input type="file" name="photo"></p>
+        <p><textarea placeholder="Пару слов о себе" rows="5" cols="25" name="intoduceYourself"></textarea></p>
+        <!--<h2>Какие языки вы знаете</h2>-->
+        <fieldset>
+            <legend>Какие языки вы знаете: </legend>
+            <p>
+                <input type="checkbox" id="Russian" checked><label for="Russian">Русский </label><br>
+                <input type="checkbox" id="English"><label for="English">English </label><br>
+                <input type="checkbox" id="Deutsche"><label for="Deutsche">Deutsche</label><br>
+                <input type="checkbox" id="Italiano"><label for="Italiano">Italiano</label><br>
+                <input type="checkbox" id="Espaniol"><label for="Espaniol">Espaniol</label><br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите форму обучения</legend>
+            <input type="radio" name="radioLearningForm" id="stacionar"><label for="stacionar">Стационар</label>
+            <input type="radio" name="radioLearningForm" id="semistacionar"><label for="semistacionar">Полустационар</label>
+        </fieldset>
+        <p>
+            <select>
+                <option disabled selected>Выберите специальность</option>
+                <option>РПО</option>
+                <option>Сети</option>
+                <option>Дизайн</option>
+            </select>
+        </p>
+        <p>
+            <select>
+                <option disabled selected>Выберите дни недели</option>
+                <option>Понедельник</option>
+                <option>Вторник</option>
+                <option>Среда</option>
+                <option>Четверг</option>
+                <option>Пятница</option>
+                <option>Суббота</option>
+                <option>Воскресенье</option>
+            </select>
+        </p>
+        <p>
+            Выберите Выш любимый цвет: <input type="color" name="color"><br>
+            Когда вы хотите каникулы: <input type="week" name="vacancy"><br>
+            Куда бы вы хотели поехать на каникулах:<input type="search" name="place" placeholder="Поиск"><br>
+            На сколько вы довольны обучением:
+            <input type="range" name="happyness">
+        </p>
+
+        <p>
+            <input type="reset" value="Обновить">
+            <input type="submit" value="Применить">
+            <input type="button" value="&#9658;">
+        </p>
+    </form>
+</body>
+</html>
